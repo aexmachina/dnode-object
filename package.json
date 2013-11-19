@@ -2,14 +2,19 @@
   "name": "dnode-object",
   "version": "0.0.0",
   "description": "Wrap the methods of an object in an api object that you can use with dnode",
-  "main": "dnode-object.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:aexmachina/dnode-object.git"
   },
   "keywords": [
     "dnode"
+    "rpc",
   ],
-  "author": "Simon Wade <simon.wade@gmail.com>",
-  "license": "BSD"
+  "author": {
+    "name": "Simon Wade"
+    "email": "simon.wade@gmail.com",
+    "url": "http://aexmachina.info"
+  },
+  "license": "MIT"
 }
