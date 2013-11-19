@@ -1,0 +1,15 @@
+{
+  "name": "dnode-object",
+  "version": "0.0.0",
+  "description": "Wrap the methods of an object in an api object that you can use with dnode",
+  "main": "dnode-object.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aexmachina/dnode-object.git"
+  },
+  "keywords": [
+    "dnode"
+  ],
+  "author": "Simon Wade <simon.wade@gmail.com>",
+  "license": "BSD"
+}
