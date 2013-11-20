@@ -6,7 +6,8 @@ DnodeObject.prototype.wrap = function(object, options) {
       prop;
   for (prop in proto) {
     if (typeof object[prop] === 'function' && this.include(object, prop, options)) {
-      api[prop] = this.wrapFunction(object, prop);
+      // console.log('DnodeObject include', prop); /* debug */
+      api[prop] = this.wrapFunction(object, prop, options);
     }
   }
   return api;
@@ -17,8 +18,8 @@ DnodeObject.prototype.include = function(object, prop, options) {
   if (prop.substring(0, 1) === '_' || prop === 'constructor') {
     return false;
   }
-  if (options != null) {
-    if (options.exclude && options.exclude.indexOf(prop)) {
+  if (options) {
+    if (options.exclude && options.exclude.indexOf(prop) !== -1 ) {
       return false;
     }
     if (options.include) {
